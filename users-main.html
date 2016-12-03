@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Team Todait | Dashboard</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="mini-navbar fixed-sidebar no-skin-config full-height-layout">
+
+<div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="active">
+                    <a href="users-main.html"><i class="fa fa-slideshare"></i> <span class="nav-label"> 스터디메이트</span></a>
+                </li>
+                <li>
+                    <a href="users-main.html"><i class="fa fa-child"></i> <span class="nav-label">일반 유저</span> </a>
+                </li>
+                <li>
+                    <a href="users-push-panel.html"><i class="fa fa-bell"></i> <span class="nav-label">푸쉬</span> </a>
+                </li>
+                <li>
+                    <a href="users-daily-reports.html"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">데일리 리포트</span> </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="white-bg">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="dashboard-main.html">
+                            <i class="fa fa-area-chart"></i> 대쉬보드
+                        </a>
+                    </li>
+                    <li>
+                        <a href="groups-main.html">
+                            <i class="fa fa-group"></i> 그룹 패널
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users-main.html">
+                            <i class="fa fa-user"></i> 유저 패널
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sign-out"></i> Log out
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="fh-breadcrumb">
+            <div class="fh-column">
+                <div class="row wrapper border-bottom gray-bg user-search-header">
+                    <div class="col-lg-10">
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-2 user-search-btn">
+                        <a href="#" class="btn btn-primary">검색</a>
+                    </div>
+                    <div class="col-lg-12">
+                        <p>검색 옵션 영역</p>
+                    </div>
+                </div>
+                <div class="full-height-scroll">
+                    <ul class="list-group elements-list">
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="pull-left user-profile-img">
+                                    <img alt="image" class="img-circle user-side-profile-image" src="img/profile_small.jpg">
+                                </div>
+                                <small class="pull-right text-muted"> 7기 테스트그룹</small>
+                                <strong>고이경 / 9급 공무원</strong>
+                                <div class="small m-t-xs">
+                                    <p class="m-b-xs">
+                                        <span class="badge badge-primary">100%</span>
+                                        <span class="badge badge-info">10:54</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge badge-warning">기상인증</span>
+                                        <span class="badge badge-primary">계획인증</span>
+                                        <span class="badge badge-success">목표달성</span>
+                                    </p>
+                                    <p class="m-b-none">
+                                        <span class="label pull-right label-success">공부중</span>
+                                        <i class="fa fa-envelope"></i> ceo@todait.com
+                                    </p>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="#">
+                                <div class="pull-left user-profile-img">
+                                    <img alt="image" class="img-circle user-side-profile-image" src="img/a1.jpg">
+                                </div>
+                                <small class="pull-right text-muted"> 7기 테스트그룹</small>
+                                <strong>꼬부기 / 9급 공무원</strong>
+                                <div class="small m-t-xs">
+                                    <p class="m-b-xs">
+                                        <span class="badge badge-warning">60%</span>
+                                        <span class="badge badge-info">09:52</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge badge-warning">기상인증</span>
+                                        <span class="badge badge-default">계획인증</span>
+                                        <span class="badge badge-default">목표달성</span>
+                                    </p>
+                                    <p class="m-b-none">
+                                        <span class="label pull-right label-danger">쉬는중</span>
+                                        <i class="fa fa-envelope"></i> ceo@todait.com
+                                    </p>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="pull-left user-profile-img">
+                                    <img alt="image" class="img-circle user-side-profile-image" src="img/a2.jpg">
+                                </div>
+                                <small class="pull-right text-muted"> 7기 테스트그룹</small>
+                                <strong>핑끼맘🐰 정신차룟ㅜㅜ @ / 9급 공무원</strong>
+                                <div class="small m-t-xs">
+                                    <p class="m-b-xs">
+                                        <span class="badge badge-danger">10%</span>
+                                        <span class="badge badge-info">04:33</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge badge-warning">기상인증</span>
+                                        <span class="badge badge-default">계획인증</span>
+                                        <span class="badge badge-default">목표달성</span>
+                                    </p>
+                                    <p class="m-b-none">
+                                        <span class="label pull-right label-danger">쉬는중</span>
+                                        <i class="fa fa-envelope"></i> ceo@todait.com
+                                    </p>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="pull-left user-profile-img">
+                                    <img alt="image" class="img-circle user-side-profile-image" src="img/a8.jpg">
+                                </div>
+                                <small class="pull-right text-muted"> 7기 테스트그룹</small>
+                                <strong>꼬마핑거✌  / 기타 업무</strong>
+                                <div class="small m-t-xs">
+                                    <p class="m-b-xs">
+                                        <span class="badge badge-primary">100%</span>
+                                        <span class="badge badge-info">02:01</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge badge-warning">기상인증</span>
+                                        <span class="badge badge-primary">계획인증</span>
+                                        <span class="badge badge-default">목표달성</span>
+                                    </p>
+                                    <p class="m-b-none">
+                                        <span class="label pull-right label-success">공부중</span>
+                                        <i class="fa fa-envelope"></i> ceo@todait.com
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="pull-left user-profile-img">
+                                    <img alt="image" class="img-circle user-side-profile-image" src="img/a3.jpg">
+                                </div>
+                                <small class="pull-right text-muted"> 8기 신나는 그룹</small>
+                                <strong>건축👑삼관왕 / 공무원 9급</strong>
+                                <div class="small m-t-xs">
+                                    <p class="m-b-xs">
+                                        <span class="badge badge-primary">100%</span>
+                                        <span class="badge badge-info">02:01</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge badge-default">기상인증</span>
+                                        <span class="badge badge-default">계획인증</span>
+                                        <span class="badge badge-default">목표달성</span>
+                                    </p>
+                                    <p class="m-b-none">
+                                        <span class="label pull-right label-success">공부중</span>
+                                        <i class="fa fa-envelope"></i> ceo@todait.com
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="pull-left user-profile-img">
+                                    <img alt="image" class="img-circle user-side-profile-image" src="img/a4.jpg">
+                                </div>
+                                <small class="pull-right text-muted"> 8기 신나는 그룹</small>
+                                <strong>꼬북🐢  / 공무원 9급</strong>
+                                <div class="small m-t-xs">
+                                    <p class="m-b-xs">
+                                        <span class="badge badge-danger">0%</span>
+                                        <span class="badge badge-danger">00:00</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge badge-warning">기상인증</span>
+                                        <span class="badge badge-primary">계획인증</span>
+                                        <span class="badge badge-default">목표달성</span>
+                                    </p>
+                                    <p class="m-b-none">
+                                        <span class="label pull-right label-danger">쉬는중</span>
+                                        <i class="fa fa-envelope"></i> ceo@todait.com
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="pull-left user-profile-img">
+                                    <img alt="image" class="img-circle user-side-profile-image" src="img/a5.jpg">
+                                </div>
+                                <small class="pull-right text-muted"> 8기 신나는 그룹</small>
+                                <strong>꽃씨네 @ / 공무원 준비생 9급</strong>
+                                <div class="small m-t-xs">
+                                    <p class="m-b-xs">
+                                        <span class="badge badge-primary">100%</span>
+                                        <span class="badge badge-info">02:01</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge badge-warning">기상인증</span>
+                                        <span class="badge badge-primary">계획인증</span>
+                                        <span class="badge badge-default">목표달성</span>
+                                    </p>
+                                    <p class="m-b-none">
+                                        <span class="label pull-right label-success">공부중</span>
+                                        <i class="fa fa-envelope"></i> ceo@todait.com
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="pull-left user-profile-img">
+                                    <img alt="image" class="img-circle user-side-profile-image" src="img/a6.jpg">
+                                </div>
+                                <small class="pull-right text-muted"> 스터디메이트요원 : 우리쌤들화이팅 02</small>
+                                <strong>내방은궁전 @ / 중등교원임용 미술</strong>
+                                <div class="small m-t-xs">
+                                    <p class="m-b-xs">
+                                        <span class="badge badge-primary">100%</span>
+                                        <span class="badge badge-info">02:01</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge badge-warning">기상인증</span>
+                                        <span class="badge badge-primary">계획인증</span>
+                                        <span class="badge badge-default">목표달성</span>
+                                    </p>
+                                    <p class="m-b-none">
+                                        <span class="label pull-right label-success">공부중</span>
+                                        <i class="fa fa-envelope"></i> ceo@todait.com
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <div class="pull-left user-profile-img">
+                                    <img alt="image" class="img-circle user-side-profile-image" src="img/a7.jpg">
+                                </div>
+                                <small class="pull-right text-muted"> 8기 신나는 그룹</small>
+                                <strong>🙈  / 준비생 MDEET</strong>
+                                <div class="small m-t-xs">
+                                    <p class="m-b-xs">
+                                        <span class="badge badge-primary">100%</span>
+                                        <span class="badge badge-info">02:01</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge badge-warning">기상인증</span>
+                                        <span class="badge badge-primary">계획인증</span>
+                                        <span class="badge badge-default">목표달성</span>
+                                    </p>
+                                    <p class="m-b-none">
+                                        <span class="label pull-right label-danger">쉬는중</span>
+                                        <i class="fa fa-envelope"></i> ceo@todait.com
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="full-height">
+                <div class="full-height-scroll white-bg border-left">
+                    <div class="element-detail-box">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h1>유저 패널</h1>
+                            </div>
+                            <div class="col-lg-4">
+                                <p>유저 패널 사이드</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>
+                <strong>&copy; Copyright</strong> Team Todait
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+
+
+</body>
+
+</html>
