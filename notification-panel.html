@@ -97,15 +97,157 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-primary">
-                        <div class="panel-heading">
+                        <div class="panel-heading" style="height:60px;">
                           검색 조건
+                          <a data-toggle="modal" class="btn btn-primary pull-right" href="#filter-save-modal-form"><i class="fa fa-save"></i> 현재 검색 조건 저장</a>
+                          <a data-toggle="modal" class="btn btn-primary pull-right" href="#filter-load-modal-form" style="margin-right:10px;"><i class="fa fa-bars"></i> 기존 검색 조건 불러오기</a>
                         </div>
                         <div class="panel-body">
-
+                          <h1>## 관덕이가 구현하는 필터링 패널</h1>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>해당 조건에 해당하는 유저 총 N 명  </h5>
+                        <div class="ibox-tools">
+                            <button class="btn btn-info"><i class="fa fa-send"></i> 푸시보내기</button>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>이름</th>
+                                <th>목표</th>
+                                <th>그룹 이름</th>
+                                <th>오늘 기록</th>
+                                <th>미션</th>
+                                <th>지금 상태</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img alt="image" class="img-circle" src="img/profile_small.jpg" style="margin-right:30px;" />Samantha</td>
+                                <td>공무원 준비생 9급</td>
+                                <td>스터디메이트 8기 9급 공무원 화이팅!</td>
+                                <td>
+                                  <span class="badge badge-warning">60%</span>
+                                  <span class="badge badge-info">09:52</span>
+                                </td>
+                                <td>
+                                  <span class="badge badge-warning">기상인증</span>
+                                  <span class="badge badge-primary">계획인증</span>
+                                  <span class="badge badge-success">목표달성</span>
+                                  <span class="badge badge-info">응원점수</span>
+                                </td>
+                                <td><span class="label label-success">공부중</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img alt="image" class="img-circle" src="img/profile_small.jpg" style="margin-right:30px;" />Samantha</td>
+                                <td>공무원 준비생 5급</td>
+                                <td>스터디메이트 10기 5급 공무원 화이팅!</td>
+                                <td>
+                                  <span class="badge badge-primary">100%</span>
+                                  <span class="badge badge-info">09:52</span>
+                                </td>
+                                <td>
+                                  <span class="badge badge-warning">기상인증</span>
+                                  <span class="badge badge-default">계획인증</span>
+                                  <span class="badge badge-success">목표달성</span>
+                                  <span class="badge badge-default">응원점수</span>
+                                </td>
+                                <td><span class="label label-danger">쉬는중</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img alt="image" class="img-circle" src="img/profile_small.jpg" style="margin-right:30px;" />Samantha</td>
+                                <td>공무원 준비생 9급</td>
+                                <td>스터디메이트 8기 9급 공무원 화이팅!</td>
+                                <td>
+                                  <span class="badge badge-warning">60%</span>
+                                  <span class="badge badge-info">09:52</span>
+                                </td>
+                                <td>
+                                  <span class="badge badge-warning">기상인증</span>
+                                  <span class="badge badge-primary">계획인증</span>
+                                  <span class="badge badge-success">목표달성</span>
+                                  <span class="badge badge-info">응원점수</span>
+                                </td>
+                                <td><span class="label label-success">공부중</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img alt="image" class="img-circle" src="img/profile_small.jpg" style="margin-right:30px;" />Samantha</td>
+                                <td>공무원 준비생 9급</td>
+                                <td>스터디메이트 8기 9급 공무원 화이팅!</td>
+                                <td>
+                                  <span class="badge badge-warning">60%</span>
+                                  <span class="badge badge-info">09:52</span>
+                                </td>
+                                <td>
+                                  <span class="badge badge-warning">기상인증</span>
+                                  <span class="badge badge-primary">계획인증</span>
+                                  <span class="badge badge-success">목표달성</span>
+                                  <span class="badge badge-info">응원점수</span>
+                                </td>
+                                <td><span class="label label-success">공부중</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="filter-save-modal-form" class="modal fade" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="row">
+                          <div class="col-sm-12">
+                              <form role="form">
+                                  <div class="form-group"><label>검색 조건 이름</label> <input type="string" placeholder="해당 검색 조건의 이름을 저장하세요." class="form-control"></div>
+                                  <div>
+                                      <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>저장하기</strong></button>
+                                  </div>
+                              </form>
+                          </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+        </div>
+        <div id="filter-load-modal-form" class="modal fade" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="row">
+                          <div class="col-sm-12">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>검색 조건</th>
+                                    <th></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>매니저들이 정의한 검색 조건 이름</td>
+                                    <td><button class="btn btn-sm btn-primary">불러오기</button></td>
+                                  </tr>
+                                </tbody>
+                          </div>
+                  </div>
+              </div>
+              </div>
+          </div>
         </div>
         <div class="footer">
             <div>
