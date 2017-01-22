@@ -176,7 +176,7 @@ h5 {
   transition: all 0.4s;
 }
 .nav > li.active {
-  border-left: 4px solid #19aa8d;
+  border-left: 4px solid #65dbff;
   background: #293846;
 }
 .nav.nav-second-level > li.active {
@@ -8417,4 +8417,22 @@ body.md-skin {
 
 .fh-column .slimScrollDiv {
   padding-bottom: 170px;
+}
+
+.logo-facebook {
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 15px 18px 0 30px;
+  vertical-align: middle;
+}
+
+.logo-facebook-text {
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 15px 18px 0 0;
+  vertical-align: middle;
 }
